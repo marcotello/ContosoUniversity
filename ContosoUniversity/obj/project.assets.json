@@ -8212,17 +8212,14 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marco\\Documents\\Visual Studio 2017\\Projects\\ContosoUniversity\\ContosoUniversity\\ContosoUniversity.csproj",
+      "projectUniqueName": "C:\\Users\\marco\\documents\\visual studio 2017\\Projects\\ContosoUniversity\\ContosoUniversity\\ContosoUniversity.csproj",
       "projectName": "ContosoUniversity",
-      "projectPath": "C:\\Users\\marco\\Documents\\Visual Studio 2017\\Projects\\ContosoUniversity\\ContosoUniversity\\ContosoUniversity.csproj",
-      "outputPath": "C:\\Users\\marco\\Documents\\Visual Studio 2017\\Projects\\ContosoUniversity\\ContosoUniversity\\obj\\",
+      "projectPath": "C:\\Users\\marco\\documents\\visual studio 2017\\Projects\\ContosoUniversity\\ContosoUniversity\\ContosoUniversity.csproj",
+      "outputPath": "C:\\Users\\marco\\documents\\visual studio 2017\\Projects\\ContosoUniversity\\ContosoUniversity\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "net452"
       ],
-      "files": {
-        "lib/net452/ContosoUniversity.dll": "C:\\Users\\marco\\Documents\\Visual Studio 2017\\Projects\\ContosoUniversity\\ContosoUniversity\\bin\\placeholder\\net452\\ContosoUniversity.dll"
-      },
       "frameworks": {
         "net452": {
           "projectReferences": {}
@@ -8232,23 +8229,23 @@
     "frameworks": {
       "net452": {
         "dependencies": {
-          "Microsoft.ApplicationInsights.AspNetCore": {
-            "target": "Package",
-            "version": "2.0.0"
-          },
           "Microsoft.AspNetCore": {
             "target": "Package",
             "version": "1.1.2"
           },
-          "Microsoft.AspNetCore.Mvc": {
-            "target": "Package",
-            "version": "1.1.3"
-          },
-          "Microsoft.AspNetCore.StaticFiles": {
+          "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "1.1.2"
           },
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+            "target": "Package",
+            "version": "1.1.1"
+          },
           "Microsoft.EntityFrameworkCore.Design": {
+            "target": "Package",
+            "version": "1.1.2"
+          },
+          "Microsoft.VisualStudio.Web.BrowserLink": {
             "target": "Package",
             "version": "1.1.2"
           },
@@ -8260,17 +8257,17 @@
             "target": "Package",
             "version": "1.1.2"
           },
-          "Microsoft.Extensions.Logging.Debug": {
+          "Microsoft.AspNetCore.Mvc": {
+            "target": "Package",
+            "version": "1.1.3"
+          },
+          "Microsoft.ApplicationInsights.AspNetCore": {
+            "target": "Package",
+            "version": "2.0.0"
+          },
+          "Microsoft.AspNetCore.StaticFiles": {
             "target": "Package",
             "version": "1.1.2"
-          },
-          "Microsoft.VisualStudio.Web.BrowserLink": {
-            "target": "Package",
-            "version": "1.1.2"
-          },
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-            "target": "Package",
-            "version": "1.1.1"
           }
         }
       }

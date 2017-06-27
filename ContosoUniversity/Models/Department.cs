@@ -22,6 +22,11 @@ namespace ContosoUniversity.Models
         public DateTime StartDate { get; set; }
 
         public int? InstructorID { get; set; }
+        
+        // property to control de concurrency in the DB.
+        [Timestamp]
+        public byte[] RowVersion { get; set; }
+
 
         public Instructor Administrator { get; set; }
         public ICollection<Course> Courses { get; set; }
