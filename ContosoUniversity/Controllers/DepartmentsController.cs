@@ -27,6 +27,24 @@ namespace ContosoUniversity.Controllers
         }
 
         // GET: Departments/Details/5
+        //public async Task<IActionResult> Details(int? id)
+        //{
+        //    if (id == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    var department = await _context.Departments
+        //        .Include(d => d.Administrator).Include(i => i.Administrator).AsNoTracking().SingleOrDefaultAsync(m => m.DepartmentID == id);
+        //    if (department == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    return View(department);
+        //}
+
+        // This methos is developed with Raw SQL version.
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -34,8 +52,13 @@ namespace ContosoUniversity.Controllers
                 return NotFound();
             }
 
+            string query = "SELECT * FROM Department WHERE DepartmentID = {0}";
             var department = await _context.Departments
-                .Include(d => d.Administrator).Include(i => i.Administrator).AsNoTracking().SingleOrDefaultAsync(m => m.DepartmentID == id);
+                .FromSql(query, id)
+                .Include(d => d.Administrator)
+                .AsNoTracking()
+                .SingleOrDefaultAsync();
+
             if (department == null)
             {
                 return NotFound();
